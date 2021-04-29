@@ -86,3 +86,5 @@ set shiftwidth=3    " Set number of spaces for tabs
 set lbr             " Break in spaces instead in words (display only)
 set autoindent      " Copy indent of line when starting the next one
 set smartindent     " Better indent in C-like languages (see :help)
+
+" echo '.vimrc loaded'  " feedback for testing

@@ -1,0 +1,7 @@
+# Fading
+fading = true;
+fade-in-step = 0.05;
+fade-out-step = 0.05;
+inactive-opacity = 0.8;
+menu-opacity = 1.0;
+# opacity-rule = 100:name *= "rofi";

@@ -1,0 +1,44 @@
+# ===================================================================
+# === Active ========================================================
+# ===================================================================
+separator_block_width=14
+
+# title, battery, date
+
+# Run an external script once every minute
+[battery]
+command=~/.config/i3/scripts/battery.sh
+interval=60
+markup=pango
+
+[time]
+label=
+command=date '+%a %d.%m.%y %H:%M:%S'
+interval=5
+color=#50C878
+
+
+# ===================================================================
+# === Unused ========================================================
+# ===================================================================
+# [suspend]
+# full_text=Suspend
+# command=echo 'Alt'
+#
+# [date]
+# command=date +"%a %d-%m.%y"
+#
+# [window]
+# command=xprop -id $(xprop -root _NET_ACTIVE_WINDOW | cut -d ' ' -f 5) WM_NAME | cut -d '"' -f 2
+# interval=5
+
+# [message]
+# command=~/.config/bar/scripts/notifications.sh
+# interval=60
+# markup=pango
+#
+# [volume]
+# command=amixer get Master | grep % | awk '{ print $4 }'
+#
+# [IP]
+# command=hostname -i | awk '{ print "IP: " $1 }'

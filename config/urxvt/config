@@ -1,0 +1,67 @@
+!# urxvt functional settings
+URxvt.saveLines: 1000
+URxvt.scrollBar: false
+URxvt.secondaryScroll: true
+!# URxvt.font: xft:siji:regular:pixelsize=22
+URxvt.font: xft:Ubuntu Mono:style=regular:pixelsize=22
+!# URxvt.font:xft:Bitstream Vera Sans Mono:pixelsize=18
+!# URxvt.font: xft:Monospace:pixelsize=20
+!# URxvt.font: xft:DejavuSansMono:pixelsize=20
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
+URxvt.tabbed.saveLines: 1000
+URxvt.tabbed.scrollBar: false
+URxvt.tabbed.tabbar-fg: 3
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 0
+URxvt.tabbed.tab-bg: 1
+URxvt.tabbed.secondaryScroll: true
+URxvt.inheritPixmap: true 
+URxvt.shading: 70
+URxvt.letterSpace: 0
+
+!# urxvt color settings
+URxvt.foreground: #dddddd
+URxvt.background: #333333
+URxvt.colorBD: #ff0000
+
+URxvt.transparent: true
+URxvt.tintColor: #888888
+
+!# Set default colorcode for color name 
+!# black
+!# URxvt.color0:           #2f2f2f
+URxvt.color0:           #282828
+!# red 
+!# URxvt.color1:           #705050
+URxvt.color1:           #e04040
+!# green
+URxvt.color2:           #00b45a
+!# yellow
+!# URxvt.color3:           #dfcf8f
+URxvt.color3:           #dddd00
+!# blue 
+URxvt.color4:           #506070
+!# magenta
+URxvt.color5:           #dc8cc3
+!# cyan
+URxvt.color6:           #8cd0d3
+!# white
+URxvt.color7:           #dcdccc
+!# bright black
+URxvt.color8:           #709080
+!# bright red
+URxvt.color9:           #cc5454
+!# bright green
+URxvt.color10:          #4d9f4d
+!# bright yellow
+URxvt.color11:          #f0dfaf
+!# bright blue
+URxvt.color12:          #4186be
+!# bright magenta
+URxvt.color13:          #ec93d3
+!# bright cyan
+URxvt.color14:          #93e0e3
+!# bright white
+URxvt.color15:          #ffffff

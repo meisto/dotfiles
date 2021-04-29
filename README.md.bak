@@ -4,7 +4,7 @@
 My dotfiles.
 
 
-## Installation
+## Instalation
 Be careful, running this script may destroy your existing setup. **It does not have all necessary security checks and may alter your files without asking.** If you want to be sure that it will not break your installation, please copy and paste the files you need by hand.  
 ```bash
 /bin/bash build.sh

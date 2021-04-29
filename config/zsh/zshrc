@@ -1,0 +1,30 @@
+# Set Language Environment
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+# Autoloads
+autoload -U colors && colors
+
+# oh-my-zsh settings
+export ZSH="$HOME/.config/oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
+
+# Print startup infos
+source ~/.config/zsh/scripts/info.zsh
+
+# themes
+source ~/.config/zsh/theme_1.zsh
+# source ~/.config/zsh/theme_minimal.zsh
+
+# aliases
+alias lock="i3lock -c 3f3f3f; systemctl suspend"
+alias ls="ls --color=always"
+alias termine="vim termine"
+alias cdu="cd ~/Documents/Uni/Master/SS21"
+alias ideaIC='sh ~/.programs/ideaIC-2018.3.3/idea-IC-183.5153.38/bin/idea.sh & exit'
+# Need adjusting
+# alias monitor-on="zsh ~/.config/zsh/scripts/monitor_on.zsh"
+# alias monitor-off="zsh ~/.config/zsh/scripts/monitor_off.zsh"
+
+echo ""         # Linebreak for looks
