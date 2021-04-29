@@ -1,0 +1,88 @@
+" ===================================================================
+" === Sources =======================================================
+" ===================================================================
+" Talk: "Mastering the Vim Language"
+" https://www.youtube.com/watch?v=wlR5gYd6um0
+" Talk: "How to Do 90% of What Plugins Do (With Just Vim)"
+" https://www.youtube.com/watch?v=XA2WjJbmmoM
+" Blog: "Build your own Vim statusline"
+" https://shapeshed.com/vim-statuslines/
+
+
+" ===================================================================
+" === Vundle ========================================================
+" ===================================================================
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+    Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle
+    Plugin 'itchyny/lightline.vim' " Improved statusline
+
+    " Programming Language Support
+    Plugin 'davidhalter/jedi-vim' " Python
+    Plugin 'derekwyatt/vim-scala' " Scala
+    Plugin 'vim-latex/vim-latex' " Latex
+    " Plugin 'leafgarland/typescript-vim' " TypeScript Syntax
+    " Plugin 'Quramy/tsuquyomi' " Typescript omnicomplete
+    " Plugin 'rust-lang/rust.vim' " Rust
+call vundle#end()            " required
+
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just 
+" :PluginUpdate     - update plugins
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins
+
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+filetype plugin indent on   " required
+" filetype plugin on        " To ignore plugin indent changes instead
+
+
+" ===================================================================
+" === Basics ========================================================
+" ===================================================================
+" Notes: 
+"   'let' for variables, 'set' for internal options;
+"   ':help command' for help in vim
+
+set nocompatible        " Remove compability to vi 
+syntax enable           " Enable syntax highlighting
+filetype plugin on      " Enable plugins for specific filetypes
+set path+=**            " Configure path to include subdirs
+set wildmenu            " Enable better menu
+set number              " Display absolute number on each line
+" set relativenumber    " Display relative number on each line
+set encoding=utf-8
+set history=100         " Number of cl calls that are remembered
+set laststatus=2        " Enable the statusline
+
+
+" ===================================================================
+" === Filetype Specifications  ======================================
+" ===================================================================
+" Assign calcurse files the filetype 'markdown'
+autocmd BufRead,BufNewFile /tmp/calcurse* set filetype=markdown
+
+
+" ===================================================================
+" === Colors & Colorschemes =========================================
+" ===================================================================
+" set background=dark
+" colorscheme desert
+"
+let g:lightline={'colorscheme':'seoul256',} " Lightline colorscheme
+" Alternative colorschemes: wombat, jellybeans, seoul256
+
+
+" ===================================================================
+" === Code Handling =================================================
+" ===================================================================
+set expandtab       " replace tabs with spaces
+set smarttab        " smarter tab handling
+set tabstop=8       " Set displayed size of tabs
+set shiftwidth=3    " Set number of spaces for tabs
+set lbr             " Break in spaces instead in words (display only)
+set autoindent      " Copy indent of line when starting the next one
+set smartindent     " Better indent in C-like languages (see :help)
